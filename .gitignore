@@ -1,0 +1,29 @@
+# Các thư mục dependencies (cực kỳ nặng, không push lên Git)
+node_modules/
+/dist
+/dist-ssr
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Biến môi trường (Chứa mật khẩu, API key bảo mật)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor (VS Code, WebStorm...)
+.vscode/
+.idea/
+*.suo
+*.ntvsca*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
