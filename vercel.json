@@ -1,8 +1,23 @@
 {
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "https://ladder-press-mumbo.ngrok-free.dev/api/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "ngrok-skip-browser-warning",
+          "value": "true"
+        }
+      ]
     }
   ]
 }
